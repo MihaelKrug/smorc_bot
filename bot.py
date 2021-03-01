@@ -112,6 +112,7 @@ async def on_ready():
 		print(e)
 
 # on new message
+@log_start
 @client.event
 async def on_message(message):
 	if message.author == client.user:
